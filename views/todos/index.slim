@@ -1,0 +1,18 @@
+p yea
+
+h2 Alla todos
+- @datados.each do |todo|
+     
+    h3 
+        <div class="tooltip">   
+        a href="/todos/#{todo["id"]}/edit" #{todo["name"]}
+        <span class="tooltiptext">Edit?</span>
+    p #{todo["description"]}
+    
+
+
+    form action="/todos/#{todo["id"]}/delete" method="post" 
+        input type="submit" value="💀die"
+    hr
+
+
